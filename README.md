@@ -16,6 +16,10 @@
 - [02-文字型与列表型信息图形（Informational / List Infographics）](02-%E4%BF%A1%E6%81%AF%E5%9B%BE%E5%BD%A2%E7%B1%BB%E5%9E%8B%E6%A1%88%E4%BE%8B/02-%E6%96%87%E5%AD%97%E5%9E%8B%E4%B8%8E%E5%88%97%E8%A1%A8%E5%9E%8B%E4%BF%A1%E6%81%AF%E5%9B%BE%E5%BD%A2/%E8%AF%B4%E6%98%8E.md)
 - [03-时间轴型信息图形（Timeline Infographics）](02-%E4%BF%A1%E6%81%AF%E5%9B%BE%E5%BD%A2%E7%B1%BB%E5%9E%8B%E6%A1%88%E4%BE%8B/03-%E6%97%B6%E9%97%B4%E8%BD%B4%E5%9E%8B%E4%BF%A1%E6%81%AF%E5%9B%BE%E5%BD%A2/%E8%AF%B4%E6%98%8E.md)
 
+## 03 统计图形分析
+
+[查看 RAWGraphs 字段映射和案例分析](03-统计图形分析/README.md)
+
 ## 新增案例时同步更新
 
 1. 按主要呈现方式归档示例图和独立报告。记录可核对的图面证据，并标明待核实的出处、单位和统计口径。
