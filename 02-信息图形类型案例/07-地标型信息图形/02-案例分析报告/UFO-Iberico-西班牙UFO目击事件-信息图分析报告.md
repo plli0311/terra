@@ -4,7 +4,7 @@
 
 ## 01 示例图
 
-![《UFO IBÉRICO》信息图](../01-示例图/UFO-Iberico-%E8%A5%BF%E7%8F%AD%E7%89%99UFO%E7%9B%AE%E5%87%BB%E4%BA%8B%E4%BB%B6.jpeg)
+![《UFO IBÉRICO》信息图](../01-%E7%A4%BA%E4%BE%8B%E5%9B%BE/UFO-Iberico-%E8%A5%BF%E7%8F%AD%E7%89%99UFO%E7%9B%AE%E5%87%BB%E4%BA%8B%E4%BB%B6.jpeg)
 
 ## 02 分析报告
 

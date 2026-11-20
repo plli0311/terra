@@ -4,7 +4,7 @@
 
 ## 01 示例图
 
-![《LOVE》AI 与亲密关系](../01-示例图/LOVE-AI%E4%B8%8E%E4%BA%B2%E5%AF%86%E5%85%B3%E7%B3%BB.jpeg)
+![《LOVE》AI 与亲密关系](../01-%E7%A4%BA%E4%BE%8B%E5%9B%BE/LOVE-AI%E4%B8%8E%E4%BA%B2%E5%AF%86%E5%85%B3%E7%B3%BB.jpeg)
 
 ## 02 分析报告
 
