@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="480" viewBox="0 0 820 480" role="img" aria-label="开放日留言关键词">
+<rect width="820" height="480" rx="24" fill="#f3f6f4"/>
+<path d="M48 103H772M48 413H772" stroke="#b6c9c5"/>
+<g font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, sans-serif">
+<text x="48" y="76" font-size="37" font-weight="700" fill="#12342f">开放日留言关键词</text>
+<text x="66" y="247" font-size="86" fill="#12342f">展览</text>
+<text x="328" y="194" font-size="69" fill="#216b5b">互动</text>
+<text x="534" y="262" font-size="56" fill="#955619">导览</text>
+<text x="324" y="331" font-size="45" fill="#12342f">空间</text>
+<text x="96" y="365" font-size="33" fill="#216b5b">海报</text>
+<text x="48" y="450" font-size="19" fill="#354e49">字号映射词频 · 颜色帮助区分相邻词 · 模拟数据</text>
+</g>
+</svg>
