@@ -1,0 +1,13 @@
+﻿类型,图示标签,读数
+海况,Flat,
+海况,Calm,
+海况,Rough,
+海况,Very Rough,
+风力标尺,Beaufort scale,
+海况标尺,Douglas scale,
+方位信号,Port,
+方位信号,Starboard,
+VHF呼号,MAYDAY,
+VHF呼号,PAN,
+VHF呼号,SECURITE,
+救援图案,Rescue,1530

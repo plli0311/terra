@@ -1,0 +1,53 @@
+﻿版面行,行内位置,名称,旗标归属,比较区,LEO载荷千克
+1,1,You,,人体参照,
+1,2,Apollo LM Ascent,美国,Non-LEO,
+1,3,Morpheus,美国,Non-LEO,
+1,4,V2 Rocket,德国,Non-LEO,
+1,5,DC-X,美国,Non-LEO,
+1,6,Mercury-Redstone,美国,Non-LEO,
+1,7,Juno 1,美国,LEO,11
+1,8,Vanguard,美国,LEO,23
+1,9,Black Arrow,英国,LEO,73
+1,10,Thor-Able,美国,LEO,120
+1,11,Shavit,以色列,LEO,
+1,12,Falcon 1,美国,LEO,
+1,13,VLS-1,巴西,LEO,
+2,1,Start-1,俄罗斯,LEO,
+2,2,Epsilon,日本,LEO,1200
+2,3,Sputnik,苏联,LEO,
+2,4,Atlas LV-3B,美国,LEO,
+2,5,Minotaur IV,美国,LEO,
+2,6,Vega,欧洲,LEO,
+2,7,Titan III-B,美国,LEO,
+2,8,Gemini-Titan II,美国,LEO,
+2,9,Long March 2C,中国,LEO,
+2,10,Tsyklon-3,,LEO,
+2,11,Vostok,苏联,LEO,
+2,12,GSLV,印度,LEO,5000
+2,13,Voskhod,苏联,LEO,
+2,14,Delta II-H,美国,LEO,
+2,15,Antares,美国,LEO,
+2,16,Soyuz FG,俄罗斯,LEO,7100
+3,1,GSLV-III,印度,LEO,
+3,2,Long March 2F,中国,LEO,
+3,3,Falcon 9 v1.0,美国,LEO,
+3,4,Long March 3B,中国,LEO,
+3,5,Atlas V 400,美国,LEO,
+3,6,Falcon 9 v1.1,美国,LEO,
+3,7,Delta IV-M,美国,LEO,
+3,8,H-IIB,日本,LEO,
+3,9,Atlas V 500,美国,LEO,
+3,10,Saturn IB,美国,LEO,
+3,11,Proton-M,俄罗斯,LEO,
+3,12,Titan IV,美国,LEO,
+3,13,Space Shuttle,美国,LEO,24400
+4,1,Angara A5,俄罗斯,LEO,24500
+4,2,Ariane 5ME,欧洲,LEO,27500
+4,3,Delta IV-H,美国,LEO,28790
+4,4,Falcon Heavy,美国,LEO,53000
+4,5,SLS B-I,美国,LEO,70000
+4,6,N1,苏联,LEO,95000
+4,7,Energia,苏联,LEO,100000
+4,8,Saturn V,美国,LEO,118000
+4,9,Long March 9,中国,LEO,130000
+4,10,SLS B-II,美国,LEO,130000

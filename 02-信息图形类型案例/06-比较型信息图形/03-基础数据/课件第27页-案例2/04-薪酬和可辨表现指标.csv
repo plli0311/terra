@@ -1,0 +1,11 @@
+﻿球员,指标,关系,值,单位,周期
+Lionel Messi,薪金,=,700000,欧元,月
+Cristiano Ronaldo,薪金,=,563000,欧元,月
+Lionel Messi,综合收入,=,28600000,欧元,年
+Cristiano Ronaldo,综合收入,=,18300000,欧元,年
+Lionel Messi,速度,>,25,km/h,
+Cristiano Ronaldo,速度,=,9.2,m/s,
+Lionel Messi,欧洲冠军联赛助攻,=,5,次,
+Cristiano Ronaldo,欧洲冠军联赛助攻,=,2,次,
+Cristiano Ronaldo,联赛助攻,=,6,次,
+Cristiano Ronaldo,右脚进球,=,16,球,
