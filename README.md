@@ -12,7 +12,7 @@
 
 ## 02 信息图形类型案例
 
-[查看 17 个标签及案例](02-%E4%BF%A1%E6%81%AF%E5%9B%BE%E5%BD%A2%E7%B1%BB%E5%9E%8B%E6%A1%88%E4%BE%8B/README.md)
+[查看 17 个表现标签、ISOTYPE 设计方法及案例](02-%E4%BF%A1%E6%81%AF%E5%9B%BE%E5%BD%A2%E7%B1%BB%E5%9E%8B%E6%A1%88%E4%BE%8B/README.md)
 
 ## 03 统计图形分析
 
