@@ -1,0 +1,56 @@
+{
+  "profile_id": "linear-print-study",
+  "profile_version": "1.0",
+  "task_id": "study-reader",
+  "flags": {
+    "spot_accent": true
+  },
+  "bindings": {
+    "silhouette": {
+      "zh": "读者肩背与手臂的剪影",
+      "en": "the silhouette of the reader's shoulders, back and arms"
+    },
+    "structure": {
+      "zh": "袖褶与指节",
+      "en": "the sleeve folds and finger joints"
+    },
+    "focus": {
+      "zh": "指尖碰到书页的位置",
+      "en": "the point where a fingertip touches the page"
+    },
+    "subject": {
+      "zh": "一位读者低头翻开一本书",
+      "en": "one reader looking down while opening a book"
+    },
+    "setting": {
+      "zh": "安静的阅览室",
+      "en": "a quiet reading room"
+    },
+    "accent": {
+      "zh": "书签",
+      "en": "the bookmark"
+    }
+  },
+  "verbatim": [
+    "2:3"
+  ],
+  "rules": [
+    {
+      "id": "T03",
+      "module": "B3",
+      "field": "technical",
+      "category": "presentation",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "使用 2:3 竖幅。",
+      "en": "Use a 2:3 portrait frame.",
+      "evidence": [
+        "study-reader"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "核对画幅。"
+    }
+  ]
+}

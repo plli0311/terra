@@ -1,0 +1,64 @@
+{
+  "system_version": "1.0",
+  "profile_id": "terra-pictogram-rows",
+  "profile_version": "1.0",
+  "basis_kind": "observed",
+  "references": {
+    "R1": "03-ISOTYPE信息图/03-案例研究/CASE-0003-每25人中的大城市居民/案例图.jpeg：人物行等大剪影和共同分界，分组上方景观插图。"
+  },
+  "modules": {
+    "A1": "pending",
+    "B1": "pending",
+    "B2": "pending",
+    "B3": "active",
+    "B4": "pending",
+    "C1": "active",
+    "C2": "pending",
+    "C3": "pending",
+    "C4": "pending",
+    "D1": "pending",
+    "E1": "pending",
+    "E2": "pending",
+    "E3": "pending"
+  },
+  "slots": {
+    "data_rows": "按任务列序逐字保留的数据记录"
+  },
+  "conditions": {},
+  "rules": [
+    {
+      "id": "S01",
+      "module": "C1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用等大平涂剪影组成重复图符行。",
+      "en": "Build rows from repeated, equally sized flat silhouettes.",
+      "evidence": [
+        "R1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "同一图符高度与形状一致。"
+    },
+    {
+      "id": "S02",
+      "module": "B3",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "各行在共同分界两侧展开，左侧文字对齐；分组插画保持浅淡。",
+      "en": "Extend rows from a shared dividing line, align labels on the left and keep group illustrations subdued.",
+      "evidence": [
+        "R1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "所有行共同分界可纵向比较。"
+    }
+  ]
+}

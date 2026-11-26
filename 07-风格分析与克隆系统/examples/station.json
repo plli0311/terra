@@ -1,0 +1,56 @@
+{
+  "profile_id": "linear-print-study",
+  "profile_version": "1.0",
+  "task_id": "study-station",
+  "flags": {
+    "spot_accent": false
+  },
+  "bindings": {
+    "silhouette": {
+      "zh": "车站屋顶与外墙轮廓",
+      "en": "the outer contour of the station roof and walls"
+    },
+    "structure": {
+      "zh": "窗格与门框接缝",
+      "en": "the window grids and door-frame joints"
+    },
+    "focus": {
+      "zh": "入口门廊",
+      "en": "the entrance porch"
+    },
+    "subject": {
+      "zh": "一座临街小车站",
+      "en": "one small street-side train station"
+    },
+    "setting": {
+      "zh": "雨后安静的街道",
+      "en": "a quiet street after rain"
+    },
+    "accent": {
+      "zh": "入口门牌",
+      "en": "the entrance sign"
+    }
+  },
+  "verbatim": [
+    "2:3"
+  ],
+  "rules": [
+    {
+      "id": "T03",
+      "module": "B3",
+      "field": "technical",
+      "category": "presentation",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "使用 2:3 竖幅。",
+      "en": "Use a 2:3 portrait frame.",
+      "evidence": [
+        "study-station"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "核对画幅。"
+    }
+  ]
+}

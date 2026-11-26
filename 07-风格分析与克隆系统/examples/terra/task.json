@@ -1,0 +1,61 @@
+{
+  "profile_id": "terra-pictogram-rows",
+  "profile_version": "1.0",
+  "task_id": "terra-1930-two-rows",
+  "flags": {},
+  "bindings": {},
+  "verbatim": [],
+  "terra_source": {
+    "csv": "03-ISOTYPE信息图/03-案例研究/CASE-0003-每25人中的大城市居民/基础数据集.csv",
+    "key": "比较对象",
+    "select": [
+      "大不列颠与爱尔兰",
+      "澳大利亚"
+    ],
+    "columns": [
+      "比较对象",
+      "原图时期",
+      "每行基数",
+      "红色图符数",
+      "蓝色图符数_推算",
+      "图示百分数"
+    ],
+    "slot": "data_rows"
+  },
+  "rules": [
+    {
+      "id": "T01",
+      "module": "D1",
+      "field": "subject",
+      "category": "content",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "重绘两个1930年的比较对象。每行25人，红色表示大城市居民，蓝色表示其余居民；每枚对应4个百分点。",
+      "en": "Redraw two comparison rows from 1930. Each row represents 25 people; red marks large-city residents and blue the remainder. Each icon represents four percentage points.",
+      "evidence": [
+        "terra-1930-two-rows"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "逐枚计数，核对分母。"
+    },
+    {
+      "id": "T02",
+      "module": "E1",
+      "field": "technical",
+      "category": "content",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "按对象｜时期｜分母｜红色数｜推算蓝色数｜图示百分数编排，保留原中文标签。数据记录：{{data_rows}}。",
+      "en": "Use object, period, denominator, red count, derived blue count and pictorial percentage, in that order. Preserve the Chinese labels. Records: {{data_rows}}.",
+      "evidence": [
+        "terra-1930-two-rows"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "红+蓝=25，红×4=图示百分数。"
+    }
+  ]
+}

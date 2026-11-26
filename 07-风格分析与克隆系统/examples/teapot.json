@@ -1,0 +1,56 @@
+{
+  "profile_id": "linear-print-study",
+  "profile_version": "1.0",
+  "task_id": "study-teapot",
+  "flags": {
+    "spot_accent": true
+  },
+  "bindings": {
+    "silhouette": {
+      "zh": "壶身、壶嘴与把手的连续剪影",
+      "en": "the joined silhouettes of body, spout and handle"
+    },
+    "structure": {
+      "zh": "盖缝与把手接合处",
+      "en": "the lid seam and handle joints"
+    },
+    "focus": {
+      "zh": "壶钮与壶盖的连接处",
+      "en": "the joint between lid and knob"
+    },
+    "subject": {
+      "zh": "一把盖合的陶壶，壶嘴朝左",
+      "en": "one lidded ceramic teapot with its spout pointing left"
+    },
+    "setting": {
+      "zh": "没有其他物件的茶席",
+      "en": "an otherwise empty tea setting"
+    },
+    "accent": {
+      "zh": "壶钮",
+      "en": "the lid knob"
+    }
+  },
+  "verbatim": [
+    "2:3"
+  ],
+  "rules": [
+    {
+      "id": "T03",
+      "module": "B3",
+      "field": "technical",
+      "category": "presentation",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "使用 2:3 竖幅。",
+      "en": "Use a 2:3 portrait frame.",
+      "evidence": [
+        "study-teapot"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "核对画幅。"
+    }
+  ]
+}

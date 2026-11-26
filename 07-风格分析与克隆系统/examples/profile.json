@@ -1,0 +1,182 @@
+{
+  "system_version": "1.0",
+  "profile_id": "linear-print-study",
+  "profile_version": "1.0",
+  "basis_kind": "demonstration",
+  "references": {
+    "E1": "本系统虚构的线描印刷风格设计说明，并无参考图。",
+    "E2": "母版的通用主题接口；主体及环境由本次任务提供，属于设计选择。"
+  },
+  "modules": {
+    "A1": "pending",
+    "B1": "active",
+    "B2": "pending",
+    "B3": "active",
+    "B4": "pending",
+    "C1": "active",
+    "C2": "pending",
+    "C3": "pending",
+    "C4": "active",
+    "D1": "active",
+    "E1": "active",
+    "E2": "active",
+    "E3": "pending"
+  },
+  "slots": {
+    "silhouette": "主形体外轮廓",
+    "structure": "内部结构",
+    "focus": "密度最高的焦点",
+    "subject": "新主题与动作／状态",
+    "setting": "环境与空间",
+    "accent": "可承担小面积强调色的部位"
+  },
+  "conditions": {
+    "spot_accent": {
+      "zh": "本题需要单点强调色",
+      "en": "the theme calls for one spot accent"
+    }
+  },
+  "rules": [
+    {
+      "id": "S01",
+      "module": "C1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "以连贯的粗线概括{{silhouette}}，用较细的线交代{{structure}}。",
+      "en": "Define {{silhouette}} with continuous broad outlines and describe {{structure}} with finer lines.",
+      "evidence": [
+        "E1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "比较外轮廓与内部结构线的粗细。"
+    },
+    {
+      "id": "S02",
+      "module": "E1",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "让细节集中在{{focus}}，周围区域仅保留识别结构所需的线条。",
+      "en": "Concentrate detail at {{focus}}; retain only structure-defining lines in the surrounding areas.",
+      "evidence": [
+        "E1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "焦点附近信息密度最高。"
+    },
+    {
+      "id": "S03",
+      "module": "C4",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "should",
+      "zh": "纸底保持轻微颗粒，轮廓附近仅留零星干墨缺口。",
+      "en": "Retain a subtle paper grain with sparse dry-ink breaks along contours.",
+      "evidence": [
+        "E1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "观察纹理能否露出而不破坏形体。"
+    },
+    {
+      "id": "S04",
+      "module": "B1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "色面以暖灰与米白为主。",
+      "en": "Use warm grey and cream as the dominant color areas.",
+      "evidence": [
+        "E1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "在大面积区域检查暖灰与米白。"
+    },
+    {
+      "id": "S05",
+      "module": "B1",
+      "field": "style",
+      "category": "style",
+      "variation": "conditional",
+      "priority": "must",
+      "zh": "在{{accent}}仅用一处暗红强调。",
+      "en": "Place a single muted red accent on {{accent}}.",
+      "evidence": [
+        "E1"
+      ],
+      "when": "spot_accent",
+      "requires": [
+        "S04"
+      ],
+      "excludes": [],
+      "check": "仅有一处红色，确认承担者。"
+    },
+    {
+      "id": "S06",
+      "module": "E2",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "沿主体的结构线引导视线，最终停在{{focus}}。",
+      "en": "Guide the eye along the subject's structural lines and let it settle at {{focus}}.",
+      "evidence": [
+        "E1"
+      ],
+      "when": null,
+      "requires": [
+        "S01",
+        "S02"
+      ],
+      "excludes": [],
+      "check": "观看终点与密度峰值一致。"
+    },
+    {
+      "id": "S07",
+      "module": "D1",
+      "field": "subject",
+      "category": "content",
+      "variation": "free",
+      "priority": "must",
+      "zh": "本次主体为{{subject}}。",
+      "en": "Depict {{subject}}.",
+      "evidence": [
+        "E2"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "确认数量、身份与状态。"
+    },
+    {
+      "id": "S08",
+      "module": "B3",
+      "field": "environment",
+      "category": "content",
+      "variation": "free",
+      "priority": "must",
+      "zh": "空间设定为{{setting}}。",
+      "en": "Set the scene in {{setting}}.",
+      "evidence": [
+        "E2"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "检查新场景是否正确。"
+    }
+  ]
+}
