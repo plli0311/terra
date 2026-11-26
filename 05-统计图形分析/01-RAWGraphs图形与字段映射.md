@@ -19,5 +19,13 @@ RAWGraphs 的应用层先解析数据，再用图表声明的维度接收字段�
 | 旭日图 | 一条从父级到叶节点的分类路径。Hierarchy 接有顺序的层级列，Size 可接数值。 | 使用层级分区定位弧段。若解释角宽为占比，需要明确权重与分母，并核查叶节点是否重复计入。 |
 | 桑基图 | 一条源节点到目标节点的关系。Source node 和 Target node 必填，Size 可接流量。 | 先明确连线宽度表示什么，以及相同来源与去向如何汇总。步骤编号仅支持顺序推断，宽度需要独立流量依据。 |
 | 气泡图 | 一条具备两个坐标字段的观测。X、Y 接数值或日期，Size 可接第三个数值。 | 源码使用平方根尺度计算圆半径。读面积前核查域、半径范围与图例。尺寸、透明度和重叠都可能改变视觉印象。 |
+| 饼图 | Arcs 接数值列，Series 可用于比较组。份额的分母来自同一组。 | 字段、转换和计算可在源码索引查证。 |
+| 矩形树图 | Hierarchy 接层级，Size 接度量。检查同单位、同口径的权重。 | 字段、转换和计算可在源码索引查证。 |
+| 箱线图 | Y Axis 接单笔数值，Groups 可用于分组，渲染阶段求四分位数。 | 字段、转换和计算可在源码索引查证。 |
+| 坡度图 | Source、Target 接配对的两个端点，Label 对应对象。两端保留同单位。 | 字段、转换和计算可在源码索引查证。 |
+| 排名变化图 | X Axis、Streams 和 Ranking 用于按期追踪类别及名次，Size 可记录量级。 | 字段、转换和计算可在源码索引查证。 |
+| 冲积图 | Steps 按阶段顺序映射类别字段，Size 可接满足可加条件的量值。 | 字段、转换和计算可在源码索引查证。 |
 
 [条形图映射](https://github.com/rawgraphs/rawgraphs-charts/blob/cade3b6e1b4d35d365440b1365d51b0dd48c9bce/src/barchart/mapping.js) · [堆叠条形图](https://github.com/rawgraphs/rawgraphs-charts/tree/cade3b6e1b4d35d365440b1365d51b0dd48c9bce/src/barchartstacked) · [折线图](https://github.com/rawgraphs/rawgraphs-charts/tree/cade3b6e1b4d35d365440b1365d51b0dd48c9bce/src/linechart) · [甘特图](https://github.com/rawgraphs/rawgraphs-charts/tree/cade3b6e1b4d35d365440b1365d51b0dd48c9bce/src/ganttChart) · [矩阵映射](https://github.com/rawgraphs/rawgraphs-charts/blob/cade3b6e1b4d35d365440b1365d51b0dd48c9bce/src/matrixplot/mapping.js) · [旭日图](https://github.com/rawgraphs/rawgraphs-charts/tree/cade3b6e1b4d35d365440b1365d51b0dd48c9bce/src/sunburst) · [桑基图](https://github.com/rawgraphs/rawgraphs-charts/tree/cade3b6e1b4d35d365440b1365d51b0dd48c9bce/src/sankeydiagram) · [气泡图](https://github.com/rawgraphs/rawgraphs-charts/tree/cade3b6e1b4d35d365440b1365d51b0dd48c9bce/src/bubblechart)
+
+[查看 App、Charts 与 Core 参考源码](03-RAWGraphs参考源码索引.md)
