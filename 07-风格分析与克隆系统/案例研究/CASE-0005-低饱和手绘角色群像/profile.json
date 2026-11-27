@@ -1,0 +1,272 @@
+{
+  "system_version": "1.0",
+  "profile_id": "muted-flat-mascot-vignette",
+  "profile_version": "1.0",
+  "basis_kind": "observed",
+  "scope": "单张角色插画的作品级提取。原始发表来源、署名及制作工艺未核验。",
+  "references": {
+    "R1": "用户上传的 ART OF MISSING 角色群像插画，1486×2010 WebP。 归档文件 reference.webp。",
+    "R1-top": "左上两行手写标题及小说明、右上灰色大胸像与小角色。",
+    "R1-hero": "前景中央抱着珊瑚红大铅笔的浅色猫角。",
+    "R1-mid": "画架、桌面、收纳箱、盆栽，以及抱、蹲、探头的小角色。",
+    "R1-floor": "桌下、角色脚下、纸片和彩笔散布的地面区域。"
+  },
+  "modules": {
+    "A1": "active",
+    "B1": "active",
+    "B2": "active",
+    "B3": "active",
+    "B4": "active",
+    "C1": "active",
+    "C2": "active",
+    "C3": "active",
+    "C4": "active",
+    "D1": "active",
+    "E1": "active",
+    "E2": "active",
+    "E3": "active"
+  },
+  "slots": {
+    "hero": "前景手持工具的主角",
+    "workbench": "用来组织道具及互动的中景工作区",
+    "anchor": "位于中后层的大体量场景物",
+    "sidekicks": "参与各自微动作的配角或拟人化物件",
+    "props": "向前景及边缘散落的主题物件",
+    "headline": "左上留白内的简短标题"
+  },
+  "conditions": {
+    "lettered": {
+      "zh": "交付带题头的插画时",
+      "en": "the illustration calls for a heading"
+    }
+  },
+  "rules": [
+    {
+      "id": "S01",
+      "module": "A1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "在暖白纸色底上以黑色细轮廓和平涂画出圆润角色群像，让{{hero}}、{{workbench}}与{{anchor}}构成有前后叠压的场景。",
+      "en": "Create a rounded character ensemble on warm off-white with fine black outlines and flat fills. Layer {{hero}}, {{workbench}} and {{anchor}} through overlap.",
+      "evidence": [
+        "R1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "缩图可读到主角、工作区和后景大形三层。"
+    },
+    {
+      "id": "S02",
+      "module": "B1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "以暖白和低饱和灰褐为底，薄荷蓝、橄榄绿和褪珊瑚红分隔物件；把蛋黄黄集中在主角的眼睛与少量配角点缀。",
+      "en": "Base the palette on warm off-white and muted gray-brown; use pale mint-blue, olive and faded coral to separate objects. Concentrate egg-yolk yellow in the hero's eyes and a few minor accents.",
+      "evidence": [
+        "R1-hero"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "眼睛与互动工具先读，彩色道具不会平均抢焦。"
+    },
+    {
+      "id": "S03",
+      "module": "B2",
+      "field": "environment",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "角色和道具主体保持平涂，叠压间隙、脚底和接触地面的少数区域用轮廓硬朗的小块纯黑影。",
+      "en": "Keep figures and props flat-colored, adding small hard-edged solid black shapes in a few overlaps and ground contacts.",
+      "evidence": [
+        "R1-floor"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "阴影清楚锚定物件，面部或背景没有写实光效。"
+    },
+    {
+      "id": "S04",
+      "module": "B3",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "保持上方和左侧大块留白，让{{anchor}}居中偏右，{{workbench}}过渡到中段，{{hero}}坐在下部偏中。让{{props}}沿底部疏散。",
+      "en": "Reserve broad upper and left-side breathing room, place {{anchor}} off-center to the right, transition through {{workbench}} in the middle, and seat {{hero}} near the lower center. Scatter {{props}} loosely along the bottom.",
+      "evidence": [
+        "R1-top"
+      ],
+      "when": null,
+      "requires": [
+        "S01"
+      ],
+      "excludes": [],
+      "check": "上疏下密，场景靠遮挡与地面接触建立深度。"
+    },
+    {
+      "id": "S05",
+      "module": "B4",
+      "field": "subject",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "让{{hero}}采用大头、短肢、圆手、简洁五官的比例，与偏大的手持工具发生清楚接触；{{sidekicks}}保持较小尺度。",
+      "en": "Give {{hero}} a large head, short limbs, rounded hands and simple features, with a clear grip on a disproportionately large tool. Keep {{sidekicks}} smaller.",
+      "evidence": [
+        "R1-hero"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "主角轮廓、手与工具的接触、次级角色的尺度可辨。"
+    },
+    {
+      "id": "S06",
+      "module": "C1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用有弹性的近黑细线围合大形，内部只用必要短线画衣褶、接缝、转折和表情。道具用几何形，角色肢体用圆曲线。",
+      "en": "Enclose major shapes with pliant thin near-black lines. Use short interior marks only for folds, seams, turns and expression. Make props geometric and limbs rounded.",
+      "evidence": [
+        "R1-mid"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "缩图仍有清楚轮廓，放大不见无用复线。"
+    },
+    {
+      "id": "S07",
+      "module": "C2",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "保持角色轮廓、色块和接触影的明确硬边；通过遮挡、留缺与裁切区别前后，避免整体柔化。",
+      "en": "Keep character outlines, fills and contact shadows crisp. Use occlusion, gaps and cropped forms to distinguish depth, avoiding overall softening.",
+      "evidence": [
+        "R1-floor"
+      ],
+      "when": null,
+      "requires": [
+        "S06"
+      ],
+      "excludes": [],
+      "check": "主要色块边界完整，局部缺口有前景遮挡依据。"
+    },
+    {
+      "id": "S08",
+      "module": "C3",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "should",
+      "zh": "主角眼睛、手与道具接触点画清楚，次级道具保留功能特征，后景大色面减少细节。",
+      "en": "Resolve the hero's eyes, hands and tool contacts, retain functional cues on secondary props, and simplify broad background shapes.",
+      "evidence": [
+        "R1-mid"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "精细处与叙事动作相符，远端装饰不过密。"
+    },
+    {
+      "id": "S09",
+      "module": "C4",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "以少量平涂破边、短排线、简化图案和纯黑影表示纸、木、布或硬表面；大色面保持干净。",
+      "en": "Suggest paper, wood, cloth or hard surfaces with a few flat broken color marks, short hatches, simple patterns and solid black shapes. Leave broad fills clean.",
+      "evidence": [
+        "R1-mid"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "材质记号有区域归属，背景无明显颗粒或照片质感。"
+    },
+    {
+      "id": "S10",
+      "module": "D1",
+      "field": "subject",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "让{{sidekicks}}通过各自的一件道具或明显动作参与同一个场景。用眼睛、探头或姿势轻度拟人化一部分物件。",
+      "en": "Give {{sidekicks}} one distinct action or prop apiece within the same shared setting. Lightly personify selected objects through eyes, peeking poses or gestures.",
+      "evidence": [
+        "R1-mid"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "可以指出每组角色正在做什么，普通物件仍能辨认。"
+    },
+    {
+      "id": "S11",
+      "module": "E1",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "把细节集中在{{workbench}}的交接处和主角手边。下缘零星道具作停顿，上方与边缘保留连续暖白。",
+      "en": "Concentrate details around joins in {{workbench}} and the hero's hands. Leave scattered small pauses along the bottom and continuous warm off-white around the top and edges.",
+      "evidence": [
+        "R1-floor"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "密集区聚而不糊，边缘仍有连续留白。"
+    },
+    {
+      "id": "S12",
+      "module": "E2",
+      "field": "narrative",
+      "category": "style",
+      "variation": "conditional",
+      "priority": "should",
+      "zh": "让观众先看前景{{hero}}的眼睛与动作，再沿道具看向中后层。带题头时，将{{headline}}放在左上空处，用松弛手写字。",
+      "en": "Draw the eye first to the eyes and gesture of {{hero}}, then upward through props. When lettered, place {{headline}} in the upper-left gap in loose hand lettering.",
+      "evidence": [
+        "R1-top"
+      ],
+      "when": "lettered",
+      "requires": [
+        "S04"
+      ],
+      "excludes": [],
+      "check": "缩图先读大眼和主动作，题头、插画彼此留边。"
+    },
+    {
+      "id": "S13",
+      "module": "E3",
+      "field": "mood",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用圆润表情对照有棱角的工作道具，用安静的暖白对照密集的小动作，让场景有忙碌而亲切的气氛。",
+      "en": "Contrast rounded expressions with angular workshop props, and quiet warm-white space with clustered little actions, for a busy yet friendly mood.",
+      "evidence": [
+        "R1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "读者既能感到活动发生，也能区分最重要的动作。"
+    }
+  ]
+}

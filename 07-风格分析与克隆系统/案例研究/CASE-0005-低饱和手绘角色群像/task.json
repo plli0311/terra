@@ -1,0 +1,74 @@
+{
+  "profile_id": "muted-flat-mascot-vignette",
+  "profile_version": "1.0",
+  "task_id": "tiny-signals-radio-workshop",
+  "flags": {
+    "lettered": true
+  },
+  "bindings": {
+    "hero": {
+      "zh": "一只奶油白的原创小壁虎修理员，短腿、圆脚趾、蛋黄黄大眼，戴灰蓝围裙，抱着偏大的珊瑚红一字螺丝刀",
+      "en": "one original cream gecko mechanic with short legs, round toes, large egg-yellow eyes, a gray-blue apron and an oversized coral flat-head screwdriver"
+    },
+    "workbench": {
+      "zh": "摆有零件托盘和小工具的木质收音机维修台",
+      "en": "a wooden radio-repair bench with a parts tray and small tools"
+    },
+    "anchor": {
+      "zh": "后景右侧一台大型灰褐老式收音机，带扬声器孔、频率窗和弯天线",
+      "en": "a large gray-brown vintage radio on the rear right, with a speaker grille, tuner window and bent antenna"
+    },
+    "sidekicks": {
+      "zh": "扶线的小线轴、从抽屉探头的橄榄绿甲虫、摊开电路图的小灯泡",
+      "en": "a tiny spool holding its loose wire, an olive beetle peeking from a drawer, and a little bulb unrolling a circuit sheet"
+    },
+    "props": {
+      "zh": "少量螺丝、接头和一两张画有线路的纸",
+      "en": "a few screws, connectors and one or two circuit sketches"
+    },
+    "headline": {
+      "zh": "两行手写英文 TINY SIGNALS",
+      "en": "two hand-lettered lines reading TINY SIGNALS"
+    }
+  },
+  "verbatim": [
+    "TINY SIGNALS",
+    "3:4"
+  ],
+  "rules": [
+    {
+      "id": "T01",
+      "module": "D1",
+      "field": "subject",
+      "category": "content",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "创作「微小讯号」收音机维修台。小壁虎坐在前景偏左，双手握螺丝刀在低位检修一个收音机面板。后景机器与前景面板均可辨，三组配角各自分开，使用原创形体。",
+      "en": "Create Tiny Signals, a radio repair vignette. Seat the gecko slightly left in the foreground, using both hands to tighten a part on a low radio panel. Keep the back radio distinct from the front panel. Give each of the three sidekicks separate, original silhouettes.",
+      "evidence": [
+        "tiny-signals-radio-workshop"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "查主动作与三配角是否清楚。"
+    },
+    {
+      "id": "T02",
+      "module": "B3",
+      "field": "technical",
+      "category": "presentation",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "单张约 3:4 竖幅。只在左上排 TINY SIGNALS 两行，其余区域只用无字拨盘和无字线路图。",
+      "en": "Deliver a single approximately 3:4 portrait illustration. Show only TINY SIGNALS on two lines in the upper left; use unlettered dials and circuit drawings elsewhere.",
+      "evidence": [
+        "tiny-signals-radio-workshop"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "逐字复核标题、画幅与额外文字。"
+    }
+  ]
+}
