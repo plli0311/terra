@@ -1,0 +1,71 @@
+{
+  "profile_id": "surreal-flat-organic-scene",
+  "profile_version": "1.0",
+  "task_id": "tidal-signal-repair",
+  "flags": {
+    "local_softness": true
+  },
+  "bindings": {
+    "axis": {
+      "zh": "从左下的基座斜指向右上、带折角的黄色信号板",
+      "en": "a yellow folded signal panel ascending from a lower-left base toward the upper right"
+    },
+    "curves": {
+      "zh": "宽窄不一的绿海藻与柔性管线",
+      "en": "ribbons of green kelp and flexible lines of varied widths"
+    },
+    "micro_scene": {
+      "zh": "右下偏中的白色扇贝形检修舱",
+      "en": "a white scallop-shaped service pod just right of center and below the midpoint"
+    },
+    "figures": {
+      "zh": "三位穿深色便装的维修员",
+      "en": "the three technicians in dark casual clothes"
+    },
+    "backdrop": {
+      "zh": "潮水退后的海底气象站",
+      "en": "an underwater weather station in an imagined low-tide moment"
+    },
+    "soft_forms": {
+      "zh": "右上悬挂的两枚浅蓝浮标",
+      "en": "two pale-blue floats hanging in the upper right"
+    }
+  },
+  "verbatim": [],
+  "rules": [
+    {
+      "id": "T01",
+      "module": "D1",
+      "field": "subject",
+      "category": "content",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "绘制「潮汐信号维修站」：一位维修员坐在主板左下基座，第二位从打开的白色舱口探身，第三位在右侧扶住一条绿管线。旁边散放珊瑚红线缆卷、扁青色盒和淡橙色浮筒。",
+      "en": "Depict a tidal signal repair station: one technician sits at the lower-left base of the panel, a second leans out of the open white hatch, and a third steadies a green line on the right. Scatter a coral cable spool, a flat aqua case and a pale orange buoy nearby.",
+      "evidence": [
+        "tidal-signal-repair"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "逐一核对三个人物的位置与动作。"
+    },
+    {
+      "id": "T02",
+      "module": "B3",
+      "field": "technical",
+      "category": "presentation",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "输出单张约 4:3 横幅，无标题、标识及可读文字。使用潮汐设施的专属物件与新布局。",
+      "en": "Deliver one approximately 4:3 landscape illustration, with no heading, logos or readable text. Use objects and a layout specific to the tidal station.",
+      "evidence": [
+        "tidal-signal-repair"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "核对横幅比例、文字及题材残留。"
+    }
+  ]
+}

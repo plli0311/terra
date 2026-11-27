@@ -1,0 +1,275 @@
+{
+  "system_version": "1.0",
+  "profile_id": "surreal-flat-organic-scene",
+  "profile_version": "1.0",
+  "basis_kind": "observed",
+  "scope": "单张上传图的作品级提取。未据此推定作者全部作品或制作媒介。",
+  "references": {
+    "R1": "用户上传 Masha_Krasnova-Shabaeva.jpeg，1200×905。原作出处与公开转载授权未核实。",
+    "R1-wide": "R1 全图，黄色斜面、绿茎与散布的人物。",
+    "R1-left": "R1 左上果实、人物、叶脉与左下斜面落脚点。",
+    "R1-center": "R1 中腹的椭圆、裂口、局部人物与大片白、蓝色色面。",
+    "R1-right": "R1 右上及右下的垂挂花形、面孔和斑点生物。",
+    "R1-bg": "R1 上方灰蓝到底部沙米色的背景，以及显露的间隙。"
+  },
+  "modules": {
+    "A1": "active",
+    "B1": "active",
+    "B2": "active",
+    "B3": "active",
+    "B4": "active",
+    "C1": "active",
+    "C2": "active",
+    "C3": "active",
+    "C4": "active",
+    "D1": "active",
+    "E1": "active",
+    "E2": "active",
+    "E3": "active"
+  },
+  "slots": {
+    "axis": "承担首焦点的单一长形物件",
+    "curves": "串联分区并造成遮挡的有机长形物件",
+    "micro_scene": "承担次焦点的主题物件与异常动作",
+    "figures": "提供相对尺度和日常动作的主体",
+    "backdrop": "衬托主题物件的简化环境",
+    "soft_forms": "允许局部软渐变的附属形体"
+  },
+  "conditions": {
+    "local_softness": {
+      "zh": "场景含有需要区分前后表面的垂挂物件",
+      "en": "the scene includes hanging forms whose surfaces benefit from tonal separation"
+    }
+  },
+  "rules": [
+    {
+      "id": "S01",
+      "module": "A1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "建立超现实平涂插画，用{{axis}}形成单一长色面，使它与{{curves}}交织。",
+      "en": "Create a surreal flat-color illustration. Make {{axis}} the single elongated color plane and interweave it with {{curves}}.",
+      "evidence": [
+        "R1-wide"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "缩成缩略图时仍能看出斜直与曲线的交错。"
+    },
+    {
+      "id": "S02",
+      "module": "B1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "把最醒目的明亮黄色集中在主轴，绿承担有机结构连接，珊瑚红、橙、湖蓝和白用作离散辅色。",
+      "en": "Concentrate the brightest yellow on the main axis, use green to link organic structures, and place coral, orange, aqua and white as separate secondary accents.",
+      "evidence": [
+        "R1-wide"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "避免辅色在全图平均分布或形成第二条同等抢眼的黄色轴。"
+    },
+    {
+      "id": "S03",
+      "module": "B2",
+      "field": "environment",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "为{{backdrop}}设置低对比的冷灰蓝到暖沙米色渐变，主要物件平涂，光感主要来自背景色温和少量浅色小高光。",
+      "en": "Give {{backdrop}} a low-contrast cool slate-blue to warm sandy-beige gradient. Keep primary objects flat, with light suggested by background temperature and a few pale highlights.",
+      "evidence": [
+        "R1-bg"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "背景过渡可见，主体无成片写实明暗和长投影。"
+    },
+    {
+      "id": "S04",
+      "module": "B3",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "以{{axis}}的斜势导视，借前后遮挡组织空间。让{{curves}}穿过相邻区域，接触处画清压叠或支撑。",
+      "en": "Guide the eye with the diagonal of {{axis}} and organize depth through overlap. Let {{curves}} cross neighboring areas, showing overlap or support at contact points.",
+      "evidence": [
+        "R1-left"
+      ],
+      "when": null,
+      "requires": [
+        "S01"
+      ],
+      "excludes": [],
+      "check": "至少能指出前后关系与一个明确人物或器物接触点。"
+    },
+    {
+      "id": "S05",
+      "module": "B4",
+      "field": "subject",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "让{{figures}}明显小于相邻主结构；用可辨的身体、手脚和姿态提供尺度参照。",
+      "en": "Make {{figures}} conspicuously smaller than neighboring structures and use legible limbs and poses to establish scale.",
+      "evidence": [
+        "R1-wide"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "人物和相邻器物的大小差无需靠文字说明。"
+    },
+    {
+      "id": "S06",
+      "module": "C1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用细而近黑的连续轮廓和干净的大色块建形；内部用细线交代转折、关节与必要图案。",
+      "en": "Build forms with fine, near-black continuous outlines and clean flat shapes; use fine interior lines for turns, joints and necessary patterns.",
+      "evidence": [
+        "R1-left"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "主形可由轮廓辨认，内部线不会压过剪影。"
+    },
+    {
+      "id": "S07",
+      "module": "C2",
+      "field": "style",
+      "category": "style",
+      "variation": "conditional",
+      "priority": "should",
+      "zh": "主体保留清楚硬边。仅在{{soft_forms}}内部以小范围柔渐变补一点表面转折。",
+      "en": "Keep primary silhouettes crisp. Use small soft gradients only within {{soft_forms}} to suggest surface turns.",
+      "evidence": [
+        "R1-right"
+      ],
+      "when": "local_softness",
+      "requires": [
+        "S06"
+      ],
+      "excludes": [],
+      "check": "附属形体的软过渡不会扩散到主轴或边线。"
+    },
+    {
+      "id": "S08",
+      "module": "C3",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "should",
+      "zh": "主结构保留大片平涂，把高完成度留给小面孔、手脚、接触点和局部裂口。",
+      "en": "Leave broad areas of the main structure flat and reserve finer finish for small faces, limbs, contact points and local openings.",
+      "evidence": [
+        "R1-center"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "缩小后有完整的大形，放大时能找到小细节。"
+    },
+    {
+      "id": "S09",
+      "module": "C4",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "should",
+      "zh": "将斑点、短线或重复形附着在少数对象的表面，让其方向跟随物体；其他大色面保持干净。",
+      "en": "Attach spots, hatch marks or repeated shapes to the surfaces of a few objects, following their orientation, and leave other broad planes clean.",
+      "evidence": [
+        "R1-center"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "细纹局部可见，背景和大色块没有统一颗粒滤镜。"
+    },
+    {
+      "id": "S10",
+      "module": "D1",
+      "field": "subject",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "让{{figures}}用日常的动作回应{{micro_scene}}和周围环境；把超现实感放在尺度、接触关系和少数有生命暗示的物件上。",
+      "en": "Give {{figures}} ordinary actions in response to {{micro_scene}} and the surrounding environment; place the surreal effect in scale, contact relationships and a few objects that hint at life.",
+      "evidence": [
+        "R1-center"
+      ],
+      "when": null,
+      "requires": [
+        "S05"
+      ],
+      "excludes": [],
+      "check": "能从姿势读出动作，怪异关系能靠图面解释。"
+    },
+    {
+      "id": "S11",
+      "module": "E1",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "should",
+      "zh": "让高密度发生在物件的交接区，把平整主轴和可见背景间隙留给视线休息。",
+      "en": "Concentrate detail around junctions between objects, leaving the flat main axis and visible background gaps as pauses.",
+      "evidence": [
+        "R1-wide"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "局部密集且可辨，高细节没有平均铺满。"
+    },
+    {
+      "id": "S12",
+      "module": "E2",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "让{{axis}}先入眼，随后把目光导向{{micro_scene}}和边缘小线索。",
+      "en": "Make {{axis}} the first read, then lead toward {{micro_scene}} and clues near the edges.",
+      "evidence": [
+        "R1-wide"
+      ],
+      "when": null,
+      "requires": [
+        "S01"
+      ],
+      "excludes": [],
+      "check": "三秒内可指认首焦点，随后能找到次焦点。"
+    },
+    {
+      "id": "S13",
+      "module": "E3",
+      "field": "mood",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "保留锐直与弯曲、巨物与小人、日常动作与离奇环境的对照；人物神色克制，氛围安静而古怪。",
+      "en": "Contrast rigid diagonals with yielding curves, giants with tiny figures, and everyday actions with a strange environment. Keep expressions restrained and the mood quiet and uncanny.",
+      "evidence": [
+        "R1-right"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "人物动作和表情自然克制，异常感来自对照。"
+    }
+  ]
+}
