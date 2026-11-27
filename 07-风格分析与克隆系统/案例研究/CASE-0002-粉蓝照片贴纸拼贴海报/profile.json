@@ -1,0 +1,273 @@
+{
+  "system_version": "1.0",
+  "profile_id": "pastel-photo-sticker-event-poster",
+  "profile_version": "1.0",
+  "basis_kind": "observed",
+  "scope": "单张作品提取。原图为用户上传，创作者、原始发表链接及授权未独立核验。画法以可见外观描述。",
+  "references": {
+    "R1": "用户提供的 Bunnies Day Cafe Event 海报，1080 × 1528。 归档文件 reference.jpeg。",
+    "R1-top": "顶部英文说明及上部两行韩文贴纸标题。",
+    "R1-bg": "上部蓝色过渡、主体粉色底、浅点纹和底边云形。",
+    "R1-photo": "中部心形照片窗、粉色衣帽与人物组。",
+    "R1-prop": "下半部淡蓝色信封、折线、蝴蝶结与两枚短文案条。",
+    "R1-stickers": "右上、左右中部和两处底角的兔耳人物与大小装饰。"
+  },
+  "modules": {
+    "A1": "active",
+    "B1": "active",
+    "B2": "active",
+    "B3": "active",
+    "B4": "active",
+    "C1": "active",
+    "C2": "active",
+    "C3": "active",
+    "C4": "active",
+    "D1": "active",
+    "E1": "active",
+    "E2": "active",
+    "E3": "active"
+  },
+  "slots": {
+    "headline": "大标题及其字形特征",
+    "hero": "中心主体图像",
+    "container": "承载中心图像的主题纸件",
+    "mascots": "同一家族的原创角色贴纸",
+    "accents": "桥接相邻版块的小装饰",
+    "labels": "补充活动信息的短标签"
+  },
+  "conditions": {
+    "microcopy": {
+      "zh": "有简短补充信息",
+      "en": "there is brief secondary information"
+    }
+  },
+  "rules": [
+    {
+      "id": "S01",
+      "module": "A1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "将{{headline}}、{{hero}}与{{mascots}}分层拼贴，形成甜酷、俏皮的活动海报。",
+      "en": "Layer {{headline}}, {{hero}}, and {{mascots}} as a playful, sweet pop event poster.",
+      "evidence": [
+        "R1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "照片、字形和平涂贴纸三种语言都能辨认。"
+    },
+    {
+      "id": "S02",
+      "module": "B1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "以浅粉与天蓝组织大色面。深蓝勾边和浓粉用来强化少数读点，白色分隔图层，浅黄及薄荷绿只作小面积变化。",
+      "en": "Organize broad areas with pastel pink and sky blue. Use dark-blue outlines and vivid pink for a few focal accents, white to separate layers, and pale yellow and mint as small variations.",
+      "evidence": [
+        "R1-bg"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "缩略图先见粉蓝主关系，浅黄及绿不会变成背景主色。"
+    },
+    {
+      "id": "S03",
+      "module": "B2",
+      "field": "environment",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "让照片呈高明度柔光，接触阴影只用于说明纸件重叠。背景的粉蓝渐变保持柔和。",
+      "en": "Use bright, softly lit photography and restrict contact shadows to clarifying overlapping paper. Keep the pink-blue background gradient gentle.",
+      "evidence": [
+        "R1-photo"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "人物五官依然可辨，纸件的短阴影不变成长硬投影。"
+    },
+    {
+      "id": "S04",
+      "module": "B3",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "让{{headline}}占据上部，让{{hero}}嵌进中部的{{container}}，使纸件和边缘贴纸部分交叠。视线从标题向主图，再向纸件及角落移动。",
+      "en": "Place {{headline}} in the upper area, nest {{hero}} in {{container}} at the center, and let paper overlap some edge stickers. Guide the eye from headline to hero image and on to the paper and edges.",
+      "evidence": [
+        "R1-prop"
+      ],
+      "when": null,
+      "requires": [
+        "S01"
+      ],
+      "excludes": [],
+      "check": "看得到中心图与纸件的遮挡关系，标题或面孔无关键裁切。"
+    },
+    {
+      "id": "S05",
+      "module": "B4",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "保持大标题和中心图两个大级别，角色贴纸降一档，图标与小标记再小一档。",
+      "en": "Keep headline and hero image as the two large scale anchors, with smaller character stickers and even smaller icons and accents.",
+      "evidence": [
+        "R1-top"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "缩小后可同时区分三档尺度。"
+    },
+    {
+      "id": "S06",
+      "module": "C1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "角色用深色勾线和低细节平涂，照片保留五官及衣褶；字形可以错落、轻微旋转，并保持一字一读。",
+      "en": "Use dark outlines and simplified flat fills for characters, retain faces and clothing folds in the photograph, and stagger or slightly rotate letters while keeping every character readable.",
+      "evidence": [
+        "R1-stickers"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "字形、平涂角色和摄影质感各自清楚。"
+    },
+    {
+      "id": "S07",
+      "module": "C2",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "大标题使用深蓝细内描边、浅蓝宽外边与轻微错位投影；轮廓贴纸也使用明显的浅色模切边，但对比低于标题。",
+      "en": "Give the headline a thin dark-blue inline outline, wide pale-blue outer border and slight offset shadow. Give die-cut stickers visible pale borders at lower contrast than the title.",
+      "evidence": [
+        "R1-top"
+      ],
+      "when": null,
+      "requires": [
+        "S06"
+      ],
+      "excludes": [],
+      "check": "文字边界连续，角色贴纸的外边与背景分得开。"
+    },
+    {
+      "id": "S08",
+      "module": "C3",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "should",
+      "zh": "脸、主标题和纸件关键折口保留清晰细节，周边符号保持简单剪影。",
+      "en": "Keep faces, headline and key paper folds clearly resolved, and simplify peripheral symbols to clear silhouettes.",
+      "evidence": [
+        "R1-photo"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "局部细节优先服务于面孔和文字辨读。"
+    },
+    {
+      "id": "S09",
+      "module": "C4",
+      "field": "environment",
+      "category": "style",
+      "variation": "core",
+      "priority": "should",
+      "zh": "在背景与纸件上加轻微细颗粒和浅点阵，让图面带印刷和手账氛围；保持面孔及笔画清晰。",
+      "en": "Add fine, subtle grain and a pale dot pattern to background and paper for a printed scrapbook feel, preserving clear faces and lettering.",
+      "evidence": [
+        "R1-bg"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "近看有颗粒，缩小后点纹不夺焦。"
+    },
+    {
+      "id": "S10",
+      "module": "D1",
+      "field": "subject",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "为{{mascots}}采用相似的轮廓语法和多种表情或动作；用{{accents}}在其间重复主题线索。",
+      "en": "Give {{mascots}} a shared silhouette grammar and varied expressions or poses. Repeat thematic cues through {{accents}} between them.",
+      "evidence": [
+        "R1-stickers"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "可辨同族角色及动作差异，装饰主题与活动一致。"
+    },
+    {
+      "id": "S11",
+      "module": "E1",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "外围疏密交替，角色贴纸和小饰件团聚但不填满所有空隙；主标题和面孔周围保留读图区。",
+      "en": "Alternate denser and sparser zones at the edges, with clusters of stickers and small ornaments separated by clear gaps around headline and faces.",
+      "evidence": [
+        "R1-stickers"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "密集处集中在边缘与交叠节点，面孔与主字不被遮住。"
+    },
+    {
+      "id": "S12",
+      "module": "E2",
+      "field": "narrative",
+      "category": "style",
+      "variation": "conditional",
+      "priority": "should",
+      "zh": "先读大标题，再看中心画面；如有补充信息，把{{labels}}放在承载纸件的清楚空位，文字短且级别低于标题。",
+      "en": "Make the headline the first read and the central image the second. If secondary information is present, place {{labels}} on a clear part of the carrying paper with short copy and lower prominence.",
+      "evidence": [
+        "R1-prop"
+      ],
+      "when": "microcopy",
+      "requires": [
+        "S04"
+      ],
+      "excludes": [],
+      "check": "缩略图先读标题及图像，短文案在展开后清楚可读。"
+    },
+    {
+      "id": "S13",
+      "module": "E3",
+      "field": "mood",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用照片的真实面孔对比图标的夸张动作，用斜排标题对比规则点阵，形成轻快的邀请感。",
+      "en": "Contrast lifelike faces with exaggerated sticker poses, and tilted lettering with a regular dot grid, for a lively invitation.",
+      "evidence": [
+        "R1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "将画面看成邀请卡时，两个对照都仍可察觉。"
+    }
+  ]
+}

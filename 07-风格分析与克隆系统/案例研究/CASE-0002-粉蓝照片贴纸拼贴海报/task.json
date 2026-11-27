@@ -1,0 +1,77 @@
+{
+  "profile_id": "pastel-photo-sticker-event-poster",
+  "profile_version": "1.0",
+  "task_id": "stars-send-letters",
+  "flags": {
+    "microcopy": true
+  },
+  "bindings": {
+    "headline": {
+      "zh": "两行泡泡字大标题「星星／来信」",
+      "en": "the two-line bubble-letter headline 星星 / 来信"
+    },
+    "hero": {
+      "zh": "三位原创成年观星社成员的柔光合照，穿浅紫、浅蓝与粉色便服",
+      "en": "a softly lit photograph of three fictional adult astronomy-club members in lavender, pale blue, and pink casual clothes"
+    },
+    "container": {
+      "zh": "带折页和圆角星芒形开窗的淡蓝星图便签",
+      "en": "a pale-blue folded sky-map card with a rounded starburst window"
+    },
+    "mascots": {
+      "zh": "四枚原创拟人小星星贴纸，分别挥手、拿望远镜、漂浮与翻开星图",
+      "en": "four original anthropomorphic star stickers, waving, holding a telescope, floating, and opening a star map"
+    },
+    "accents": {
+      "zh": "云朵、星芒、轨道线与少量柠檬黄胶带",
+      "en": "clouds, little starbursts, orbital trails and a small amount of lemon-yellow washi tape"
+    },
+    "labels": {
+      "zh": "两枚小纸条「望远镜体验」和「星图手作」",
+      "en": "two small paper labels reading 望远镜体验 and 星图手作"
+    }
+  },
+  "verbatim": [
+    "星星来信",
+    "WEEKEND STAR CLUB",
+    "望远镜体验",
+    "星图手作",
+    "A 系列竖幅"
+  ],
+  "rules": [
+    {
+      "id": "T01",
+      "module": "D1",
+      "field": "subject",
+      "category": "content",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "主题是虚构的周末观星手作会。三位成员看向镜头，手里可拿小型望远镜或折叠星图；前景大便签以珊瑚粉纸胶带固定，边角四枚星星贴纸避开所有人脸。",
+      "en": "The setting is a fictional weekend stargazing craft meetup. Three members look toward the camera and may hold a small telescope or a folded star map. Secure the large foreground card with coral-pink tape, placing four star stickers around the edges, clear of all faces.",
+      "evidence": [
+        "stars-send-letters"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "核对三人、四角色与纸件关系。"
+    },
+    {
+      "id": "T02",
+      "module": "B3",
+      "field": "technical",
+      "category": "presentation",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "单张 A 系列竖幅，接近 1:√2。上方英文小字 WEEKEND STAR CLUB。主标题精确为「星星来信」，分两行分别是「星星」「来信」。两枚纸条仅写「望远镜体验」「星图手作」。保留干净安全边距，画面只出现这四组可读文案。",
+      "en": "Deliver one A 系列竖幅 poster, approximately 1:√2. Set WEEKEND STAR CLUB as the small top line. The exact main title is 星星来信, split across two lines as 星星 and 来信. The two paper labels read only 望远镜体验 and 星图手作. Keep clean inset margins and limit readable text to these four groups.",
+      "evidence": [
+        "stars-send-letters"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "逐字核对中文、英文字母、画幅及新增杂字。"
+    }
+  ]
+}
