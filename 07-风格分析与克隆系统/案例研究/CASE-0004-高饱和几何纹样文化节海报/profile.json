@@ -1,0 +1,273 @@
+{
+  "system_version": "1.0",
+  "profile_id": "ornamental-geometry-culture-poster",
+  "profile_version": "1.0",
+  "basis_kind": "observed",
+  "scope": "单张海报的作品级风格提取；制作媒介、创作者及首发出处未核验。",
+  "references": {
+    "R1": "用户上传的 2026 K-Royal Culture Festival 春季海报，1228×2048 PNG。 归档文件 reference.png。",
+    "R1-top": "深墨蓝定制韩文标题、2026 年份、英文衬线副标题与右侧椭圆春季徽记。",
+    "R1-rail": "左侧韩文、汉字、英文叠排的六处场地名；右侧季节和底部主要日期。",
+    "R1-field": "白色中段的器物剪影、点链、彩环与弧线；左上偏中悬挂件和右上扇形件。",
+    "R1-base": "下部以中轴为基准的双层宫殿正立面与底座纹样。",
+    "R1-bg": "紫蓝顶部渐入白色中段，底部过渡到浅亮绿。"
+  },
+  "modules": {
+    "A1": "active",
+    "B1": "active",
+    "B2": "active",
+    "B3": "active",
+    "B4": "active",
+    "C1": "active",
+    "C2": "active",
+    "C3": "active",
+    "C4": "active",
+    "D1": "active",
+    "E1": "active",
+    "E2": "active",
+    "E3": "active"
+  },
+  "slots": {
+    "title": "上部的主标题和副标题",
+    "floating_objects": "中部漂浮的主题器物",
+    "base": "下方居中、具有宽底座的主体",
+    "module_patterns": "用于填充结构分区的纹样基元",
+    "rail": "可选的左侧窄栏短条目",
+    "footer": "底部关键活动信息"
+  },
+  "conditions": {
+    "info_rail": {
+      "zh": "活动需要一列短条目",
+      "en": "the activity calls for a short information rail"
+    }
+  },
+  "rules": [
+    {
+      "id": "S01",
+      "module": "A1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "使用近墨蓝的书写感标题、明亮的几何器物和细密模块纹样，形成节庆海报。让{{base}}托住中段{{floating_objects}}。",
+      "en": "Combine a near-ink-blue calligraphic heading, vivid geometric objects and dense modular ornament in a festival poster. Ground {{floating_objects}} with {{base}}.",
+      "evidence": [
+        "R1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "缩图仍可辨大字、漂浮场和宽底主体。"
+    },
+    {
+      "id": "S02",
+      "module": "B1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "背景顶端为浅薰衣草蓝，中部大片近白，底部为浅青柠绿；以墨蓝统一字色。将荧光黄绿、湖蓝、橙和洋红控制在器物与纹饰内。",
+      "en": "Fade from pale lavender-blue at the top into a broad near-white middle and pale lime at the bottom. Use ink blue for typography. Contain electric lime, cyan, orange and magenta within objects and ornament.",
+      "evidence": [
+        "R1-bg"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "文字暗、背景浅、器物鲜明，近白中段仍可辨。"
+    },
+    {
+      "id": "S03",
+      "module": "B2",
+      "field": "environment",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "采用明亮均匀的平涂观感。仅用相邻色面、薄轮廓和少量色差表示形体转折，背景可渐变。",
+      "en": "Use an evenly bright flat-color appearance. Convey turns with adjoining planes, thin contours and small color shifts; allow gradients in the background.",
+      "evidence": [
+        "R1-field"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "无厚重投影、写实高光或统一强方向光。"
+    },
+    {
+      "id": "S04",
+      "module": "B3",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "将{{title}}置于顶部，{{floating_objects}}错落悬浮在中段，{{base}}居中扎根在下部。{{footer}}占独立的底部带。",
+      "en": "Put {{title}} at the top, stagger {{floating_objects}} through the middle, anchor {{base}} at the lower center, and give {{footer}} its own footer band.",
+      "evidence": [
+        "R1-base"
+      ],
+      "when": null,
+      "requires": [
+        "S01"
+      ],
+      "excludes": [],
+      "check": "顶部字、白地器物、下部主体、页脚四区可辨。"
+    },
+    {
+      "id": "S05",
+      "module": "B4",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "标题与底部主体占最大尺度；漂浮器物用中等尺度互相错开；彩环、短连线和点串用最小尺度。",
+      "en": "Place the title and lower anchor at the largest scale, stagger medium objects through the field, and keep rings, short connectors and dotted chains smallest.",
+      "evidence": [
+        "R1-top"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "缩略看有三个尺寸级别，小圆环不会与器物混读。"
+    },
+    {
+      "id": "S06",
+      "module": "C1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "将器物拆成圆、条、扇和方形，用干净平涂拼接；{{module_patterns}}在器物表面和底座中重复使用。",
+      "en": "Build objects from circles, strips, fans and rectangles in clean flat color; repeat {{module_patterns}} on their surfaces and on the base.",
+      "evidence": [
+        "R1-base"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "关闭小纹样时，器物外形和功能仍可辨认。"
+    },
+    {
+      "id": "S07",
+      "module": "C2",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "标题用粗细悬殊、收笔有钩或回环的醒目字形。图形用精确硬边和彩色套边，点线边缘只放在局部。",
+      "en": "Give the heading strong stroke contrast with hooked or looping terminals. Use crisp edges and nested color outlines for graphics, with dotted edges only in select places.",
+      "evidence": [
+        "R1-top"
+      ],
+      "when": null,
+      "requires": [
+        "S06"
+      ],
+      "excludes": [],
+      "check": "字形可辨，图形边界清楚，边饰保留轮廓。"
+    },
+    {
+      "id": "S08",
+      "module": "C3",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "should",
+      "zh": "器物有足够形态线索可识别，腹部、构件接合和底座纹带展开细节，间隙与文字区保持简洁。",
+      "en": "Keep identifying cues on objects, enrich their bodies, joins and base bands, and leave gaps and text zones simple.",
+      "evidence": [
+        "R1-field"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "细节沿结构分区，关键剪影和字没有被纹饰侵入。"
+    },
+    {
+      "id": "S09",
+      "module": "C4",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用规则重复的条纹、棋格、同心环或点列形成可见纹理，保留无颗粒的干净色面。",
+      "en": "Build visible texture from regularly repeated stripes, checks, concentric rings or dot rows, leaving clean, grain-free color planes.",
+      "evidence": [
+        "R1-base"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "纹理来自重复构件，近看颜色边界仍清楚。"
+    },
+    {
+      "id": "S10",
+      "module": "D1",
+      "field": "subject",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "从可辨认的{{floating_objects}}中提取关键外轮廓后再几何化；外围的小圆、彩点和弧线保持分散。",
+      "en": "Retain the distinctive silhouettes of {{floating_objects}} before geometrizing them; scatter small circles, colored dots and arcs loosely around them.",
+      "evidence": [
+        "R1-field"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "主体图符与装饰记号区分明显。"
+    },
+    {
+      "id": "S11",
+      "module": "E1",
+      "field": "narrative",
+      "category": "style",
+      "variation": "conditional",
+      "priority": "should",
+      "zh": "将密度收进器物内部和底座纹带，中段器物之间保留连续白地。启用侧栏时，将{{rail}}独立对齐在窄列内。",
+      "en": "Concentrate density within objects and base bands; preserve continuous white space between middle objects. When enabled, align {{rail}} independently in a narrow column.",
+      "evidence": [
+        "R1-rail"
+      ],
+      "when": "info_rail",
+      "requires": [
+        "S04"
+      ],
+      "excludes": [],
+      "check": "侧栏与图符可分别扫描，白地连通且不会被装饰填满。"
+    },
+    {
+      "id": "S12",
+      "module": "E2",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "先用深色大标题建立阅读入口，再由明艳器物和宽底主体吸引视线向下，最终落在底部信息。",
+      "en": "Use the dark headline as the reading entry, draw the eye down through vivid objects and the broad anchor, and finish at the footer.",
+      "evidence": [
+        "R1-top"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "读序清楚，器物不会遮挡主字或信息。"
+    },
+    {
+      "id": "S13",
+      "module": "E3",
+      "field": "mood",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用端正的暗色文字对照明亮玩具般的器物，用稳固的底部中轴对照中段悬浮感，表现庄重而有庆典活力的气氛。",
+      "en": "Contrast composed dark typography with vivid toy-like objects, and a stable lower axis with a floating middle field, for lively yet dignified celebration.",
+      "evidence": [
+        "R1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "字图、稳动与密疏三组对照同时成立。"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "profile_id": "ornamental-geometry-culture-poster",
+  "profile_version": "1.0",
+  "task_id": "wind-and-weave-open-day",
+  "flags": {
+    "info_rail": true
+  },
+  "bindings": {
+    "title": {
+      "zh": "宽幅大字「风织万物」及英文衬线副标题 WIND & WEAVE",
+      "en": "the large headline 风织万物 and serif subtitle WIND & WEAVE"
+    },
+    "floating_objects": {
+      "zh": "梭子、纺锭、线轴、绞纱、针梳、编织样片六件相互分开的织造物件",
+      "en": "six separate weaving objects: a shuttle, spindle, spool, yarn skein, reed comb and woven swatch"
+    },
+    "base": {
+      "zh": "下部宽幅正视的几何木织机和织带平台",
+      "en": "a broad front-facing geometric floor loom on a woven-band platform"
+    },
+    "module_patterns": {
+      "zh": "条带、棋格、经纬格及彩色圆环",
+      "en": "stripes, checkerboards, warp-and-weft grids and colored rings"
+    },
+    "rail": {
+      "zh": "「纺线」「染色」「织造」三条由上至下的深墨蓝小字",
+      "en": "three small ink-blue labels in top-to-bottom order: 纺线, 染色, 织造"
+    },
+    "footer": {
+      "zh": "右下深墨蓝日期 06.20 — 06.21",
+      "en": "the ink-blue date 06.20 — 06.21 at the bottom right"
+    }
+  },
+  "verbatim": [
+    "风织万物",
+    "WIND & WEAVE",
+    "纺线",
+    "染色",
+    "织造",
+    "06.20 — 06.21",
+    "3:5"
+  ],
+  "rules": [
+    {
+      "id": "T01",
+      "module": "D1",
+      "field": "subject",
+      "category": "content",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "为虚构的织造开放日制作海报。六件器物彼此分开，每件只出现一件。织机须有可辨认的经线、横梁和短块织布，作为底部大主体。右侧可放一枚无字的穿梭波纹圆徽。",
+      "en": "Create a poster for a fictional weaving open day. Show each of the six objects once, visibly separated. The large lower anchor is a loom with legible warp threads, crossbar and a short woven textile. An abstract, text-free shuttle-and-wave emblem may sit at the right.",
+      "evidence": [
+        "wind-and-weave-open-day"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "核对六器物和织机的可辨结构。"
+    },
+    {
+      "id": "T02",
+      "module": "B3",
+      "field": "technical",
+      "category": "presentation",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "输出单张 3:5 竖幅。可读文字限于标题 风织万物、副标题 WIND & WEAVE、三条小字 纺线、染色、织造，以及底部日期 06.20 — 06.21。左栏与底部都有完整安全边。",
+      "en": "Deliver one 3:5 portrait poster. Limit readable text to the headline 风织万物, subtitle WIND & WEAVE, small labels 纺线, 染色, 织造, and footer date 06.20 — 06.21. Keep safe margins around the rail and footer.",
+      "evidence": [
+        "wind-and-weave-open-day"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "核对文字与安全边、画幅。"
+    }
+  ]
+}
