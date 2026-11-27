@@ -1,0 +1,273 @@
+{
+  "system_version": "1.0",
+  "profile_id": "paper-halftone-folk-festival-poster",
+  "profile_version": "1.0",
+  "basis_kind": "observed",
+  "scope": "单张作品提取；印刷媒介与工艺未核。原图署名按画面转录，原始发表出处与公开转载权限待核。",
+  "references": {
+    "R1": "用户提供的端午海报 PNG，1080 × 1440，画面底款标注 AIGC Digital Art 和 inxi-pic。 归档文件 reference.png。",
+    "R1-top": "上部薄荷绿、淡桃和米黄色的波带与纸底间隙。",
+    "R1-buildings": "中段由左下往右上抬升的屋檐群、不同图案的墙面及渐隐的柱脚。",
+    "R1-action": "下三分之一的细长龙舟、队员姿态、斜桨、旗鼓和零散水纹。",
+    "R1-paper": "全图暖白纤维状纸纹以及网点在色场和建筑墙面中的分布。",
+    "R1-footer": "下缘左对齐的小字号双语说明区。"
+  },
+  "modules": {
+    "A1": "active",
+    "B1": "active",
+    "B2": "active",
+    "B3": "active",
+    "B4": "active",
+    "C1": "active",
+    "C2": "active",
+    "C3": "active",
+    "C4": "active",
+    "D1": "active",
+    "E1": "active",
+    "E2": "active",
+    "E3": "active"
+  },
+  "slots": {
+    "setting": "沿斜线递进的主环境结构",
+    "foreground": "在下部横向展开的活动场景",
+    "gesture": "参与者反复出现的姿态或方向",
+    "atmosphere": "顶端低对比的宽形气氛色带",
+    "patterns": "随结构变化的装饰图案",
+    "label": "在下端出现的短文案"
+  },
+  "conditions": {
+    "captioned": {
+      "zh": "主题需要落款时",
+      "en": "the theme calls for a footer"
+    }
+  },
+  "rules": [
+    {
+      "id": "S01",
+      "module": "A1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "在暖白纸面上表现民俗节庆插画，将{{setting}}的高密装饰与{{foreground}}的简练动作并置，保留颗粒印刷观感。",
+      "en": "Make a folk-festival illustration on warm ivory paper, pairing the dense ornament of {{setting}} with the simplified action of {{foreground}} and a grainy printed appearance.",
+      "evidence": [
+        "R1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "缩略观看仍能辨认建筑或场景层、人物活动层和纸面留空。"
+    },
+    {
+      "id": "S02",
+      "module": "B1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用暖白纸色占据大面积。高饱和玫红和鲜绿集中在主结构；蜜桃色为暖色过渡，淡黄、薄荷绿负责轻柔气氛，炭黑只出现在小人剪影和文字。",
+      "en": "Let warm ivory paper occupy much of the composition. Concentrate vivid magenta and fresh green on the main structure; use peach as a warm transition, pale yellow and mint for a light atmosphere, and charcoal for small silhouettes and text only.",
+      "evidence": [
+        "R1-buildings"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "玫红和鲜绿集中在主形，远端色带和留纸更安静。"
+    },
+    {
+      "id": "S03",
+      "module": "B2",
+      "field": "environment",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用均匀明亮的漫射观感；以留纸、浅色和局部深色边沿暗示受光与叠压。保持暗部小而薄。",
+      "en": "Use a bright, even diffuse appearance; suggest light and layering with exposed paper, pale colors, and a few dark edges. Keep dark areas small and shallow.",
+      "evidence": [
+        "R1-paper"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "主要明暗通过墨色密度和留纸形成，地面没有重投影。"
+    },
+    {
+      "id": "S04",
+      "module": "B3",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "让{{setting}}从左下向右上形成有节奏的阶梯斜向；{{foreground}}横向铺在下部。顶部以{{atmosphere}}带入画面，底部保留整片纸色。",
+      "en": "Give {{setting}} a stepped rhythm climbing from lower left to upper right; arrange {{foreground}} horizontally below. Lead in from the top with {{atmosphere}} and leave a broad paper-colored area at the bottom.",
+      "evidence": [
+        "R1-buildings"
+      ],
+      "when": null,
+      "requires": [
+        "S01"
+      ],
+      "excludes": [],
+      "check": "能指出斜向骨架、横向行动带与连续留白。"
+    },
+    {
+      "id": "S05",
+      "module": "B4",
+      "field": "subject",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "让参与者明显小于主环境结构，但保留剪影、服色和清楚的动作。",
+      "en": "Make participants visibly smaller than the main setting while preserving legible silhouettes, clothing colors and actions.",
+      "evidence": [
+        "R1-action"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "缩略图中人群是次级焦点，放大后能辨认动作。"
+    },
+    {
+      "id": "S06",
+      "module": "C1",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用分色平面和精选细线建形。{{patterns}}只在有结构的分区内重复，小人用平涂剪影与有方向的肢体。",
+      "en": "Build forms with separated flat colors and selective fine lines. Repeat {{patterns}} within clearly structured areas and draw small figures as flat silhouettes with directional limbs.",
+      "evidence": [
+        "R1-buildings"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "细线、色形和重复纹样各自清楚，人物不依赖肖像级细节。"
+    },
+    {
+      "id": "S07",
+      "module": "C2",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "保留主结构上沿的清晰彩边，下面的柱脚或色面逐步疏开，借稀网点、破边、停笔接回纸底。",
+      "en": "Keep crisp colored edges along the upper structures. Let lower bases and planes open out into sparse halftone, broken edges and unfinished strokes, merging back into the paper.",
+      "evidence": [
+        "R1-buildings"
+      ],
+      "when": null,
+      "requires": [
+        "S06"
+      ],
+      "excludes": [],
+      "check": "上部轮廓完整，下端可看到颜料疏开至纸白。"
+    },
+    {
+      "id": "S08",
+      "module": "C3",
+      "field": "style",
+      "category": "style",
+      "variation": "core",
+      "priority": "should",
+      "zh": "把细节留给主结构转角和重复动作，地面、远处与文案周围只留少量记号。",
+      "en": "Reserve detail for turns in the main structures and repeated actions. Keep ground, distant areas and surroundings of the text to a few marks.",
+      "evidence": [
+        "R1-action"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "精细区局部集中，大片低密区域连贯。"
+    },
+    {
+      "id": "S09",
+      "module": "C4",
+      "field": "environment",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "在不同区域分别用浅纸纤维、颜料细颗粒和可辨规则网点。以点的疏密和大小组织局部色阶，让少量干边自然露纸。",
+      "en": "Use pale paper fibers, fine pigment grain, and visible regular halftone dots in different areas. Adjust dot size and spacing for local tonal steps and leave a few dry edges exposing the paper.",
+      "evidence": [
+        "R1-paper"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "能分别辨认无墨纸纹、均匀微颗粒和局部规律网点。"
+    },
+    {
+      "id": "S10",
+      "module": "D1",
+      "field": "subject",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用{{gesture}}建立节庆活动的动作节奏。安排少量主题道具，让道具、参与者和场地的关系可以一眼读懂。",
+      "en": "Use {{gesture}} as the rhythm of the festival activity. Place a small number of themed props so their relation to participants and setting reads at a glance.",
+      "evidence": [
+        "R1-action"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "姿态有一致走向，关键道具归属清楚。"
+    },
+    {
+      "id": "S11",
+      "module": "E1",
+      "field": "narrative",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "高密度集中于主结构饰带和活动动作。顶边低对比，中段纸白穿插进结构，底部安静。",
+      "en": "Concentrate detail in the main ornament and festival gestures. Keep the top low-contrast, let paper gaps enter the middle structure, and keep the bottom quiet.",
+      "evidence": [
+        "R1-paper"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "标题和动作附近仍有纸白，网点不会填满整张图。"
+    },
+    {
+      "id": "S12",
+      "module": "E2",
+      "field": "narrative",
+      "category": "style",
+      "variation": "conditional",
+      "priority": "should",
+      "zh": "先让读者看见玫红与鲜绿构成的主结构，再让视线落到小人物。需要落款时，把{{label}}放在左下的清晰纸面，字号从属。",
+      "en": "Draw the eye first to the magenta-and-green structure and then to the small figures. For a captioned work, place {{label}} low on clear paper at the left in subordinate type.",
+      "evidence": [
+        "R1-footer"
+      ],
+      "when": "captioned",
+      "requires": [
+        "S04"
+      ],
+      "excludes": [],
+      "check": "文字低调且可辨，主结构和小人物之间的焦点顺序仍成立。"
+    },
+    {
+      "id": "S13",
+      "module": "E3",
+      "field": "mood",
+      "category": "style",
+      "variation": "core",
+      "priority": "must",
+      "zh": "用宏大的斜向装饰结构对照轻巧的横向人群，用高饱和局部对照安静纸白，呈现轻盈、热闹的民俗气氛。",
+      "en": "Contrast a large diagonal ornamental structure with a light horizontal group, and pockets of vivid color with quiet ivory paper, for a lively yet airy festival mood.",
+      "evidence": [
+        "R1"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "大与小、浓与淡、斜向与横向三组对照可辨。"
+    }
+  ]
+}

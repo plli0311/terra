@@ -1,0 +1,75 @@
+{
+  "profile_id": "paper-halftone-folk-festival-poster",
+  "profile_version": "1.0",
+  "task_id": "spring-kite-festival",
+  "flags": {
+    "captioned": true
+  },
+  "bindings": {
+    "setting": {
+      "zh": "沿左下到右上错落的木构风筝展亭，最大一座在右上，布檐与木柱搭接",
+      "en": "timber kite pavilions stepping from lower left up to upper right, with the largest at the upper right and cloth awnings meeting wooden posts"
+    },
+    "foreground": {
+      "zh": "五位放风筝的人在草岸上形成的细长行动带",
+      "en": "a thin horizontal ribbon of five kite flyers on a grassy bank"
+    },
+    "gesture": {
+      "zh": "走动、抬腕牵线和仰头看风筝的动作",
+      "en": "walking, raising the wrist to guide a string, and looking up at a kite"
+    },
+    "atmosphere": {
+      "zh": "几片横掠上方的浅薄荷绿与淡蜜桃波带",
+      "en": "a few pale mint and light peach bands sweeping across the top"
+    },
+    "patterns": {
+      "zh": "布檐的条带、木亭挡板的菱格及桃色网点",
+      "en": "stripes on cloth awnings, diamonds on pavilion panels, and peach halftone dots"
+    },
+    "label": {
+      "zh": "两行小字 KITE FESTIVAL 和 春日纸鸢",
+      "en": "two small lines reading KITE FESTIVAL and 春日纸鸢"
+    }
+  },
+  "verbatim": [
+    "3:4",
+    "KITE FESTIVAL",
+    "春日纸鸢"
+  ],
+  "rules": [
+    {
+      "id": "T01",
+      "module": "D1",
+      "field": "subject",
+      "category": "content",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "创作「春日纸鸢」民俗活动海报。草岸上只有五位放飞者分布在下部一带，三只小纸鸢在周围留白中飞翔，用细线说明牵引关系。草岸只用短而疏的绿笔触。",
+      "en": "Create a folk-festival poster for 春日纸鸢. Exactly five kite flyers are spread across the lower bank. Show three small paper kites in surrounding open areas and fine strings to establish tethering. Use just a few short, sparse green marks for the bank.",
+      "evidence": [
+        "spring-kite-festival"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "检查人数、纸鸢数量及草岸是否过度铺色。"
+    },
+    {
+      "id": "T02",
+      "module": "B3",
+      "field": "technical",
+      "category": "presentation",
+      "variation": "project_locked",
+      "priority": "must",
+      "zh": "单张 3:4 竖幅。左下只排两行内容，第一行 KITE FESTIVAL，第二行 春日纸鸢，用小字号深色字。画面只使用当前主题的纸鸢、展亭、放飞者和草岸。",
+      "en": "Deliver one 3:4 portrait poster. Set just two small dark lines at the lower left, KITE FESTIVAL first and 春日纸鸢 second. Use kites, pavilions, kite flyers, and a grassy bank specific to this theme.",
+      "evidence": [
+        "spring-kite-festival"
+      ],
+      "when": null,
+      "requires": [],
+      "excludes": [],
+      "check": "核对画幅、双语落款、暗线留白和题材元素。"
+    }
+  ]
+}
